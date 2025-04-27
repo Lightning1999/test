@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import TeamSection from '../components/sections/TeamSection';
 import ClientsSection from '../components/sections/ClientsSection';
+import Icon from '../components/common/Icon';
 
 const PageContainer = styled.div`
   padding-top: 2rem;
@@ -205,6 +206,7 @@ const ValueIcon = styled.div`
   justify-content: center;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  color: var(--background-dark);
 `;
 
 const ValueTitle = styled.h3`
@@ -274,8 +276,7 @@ const AboutPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              We're a team of passionate tech experts dedicated to delivering cutting-edge software solutions
-              that drive business growth and digital transformation.
+              A privately owned global consulting and software development company with extensive experience in the mobile/telecommunication industry.
             </PageDescription>
           </HeroContent>
         </HeroSection>
@@ -301,15 +302,13 @@ const AboutPage: React.FC = () => {
                 <SectionTitle>Our <span>Story</span></SectionTitle>
                 <AboutText>
                   <p>
-                    Founded in 2010, APIDE began with a simple mission: to help businesses harness the power of technology to achieve their goals. 
-                    What started as a small team of passionate developers has grown into a comprehensive software development company serving clients across various industries.
+                    Apide is a privately owned global consulting and software development company with extensive experience in the mobile/telecommunication industry. This has lead us to a top choice in delivering app, websites and complex coding products.
                   </p>
                   <p>
-                    Over the years, we've built a reputation for delivering high-quality, scalable, and secure software solutions that address complex business challenges. 
-                    Our approach is centered on understanding our clients' unique needs and tailoring our solutions to meet their specific requirements.
+                    Apide was founded in 2005 by Morten Bruun and Jacob Eiler, and is today lead by a strong group of people with extensive knowledge and experience. Today Apide has highly qualified employees both locally in Denmark and in our modern techcenter in Vietnam. Further to that we have access to a vast network of freelance specialists.
                   </p>
                   <p>
-                    Today, we are proud to have worked with some of the leading companies in Denmark and beyond, establishing long-term partnerships built on trust, transparency, and consistent delivery of exceptional results.
+                    Apide has contributed to projects for both large and small companies in the mobile industry, e.g. TDC Mobile, TeliaSonera Denmark, and Nokia. As of today our customer portfolio, consist of a wide and diverse group of companies, ranging from Top tier companies in Europe to the entrepreneur.
                   </p>
                 </AboutText>
                 
@@ -321,7 +320,7 @@ const AboutPage: React.FC = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <StatNumber>13+</StatNumber>
+                    <StatNumber>18+</StatNumber>
                     <StatLabel>Years of Experience</StatLabel>
                   </StatItem>
                   <StatItem
@@ -369,7 +368,7 @@ const AboutPage: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                These core principles guide everything we do and define how we approach our work and relationships with clients.
+                Teaming up with Apide ensures consistent quality and excellent results.
               </PageDescription>
             </ValuesHeader>
             
@@ -381,12 +380,13 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.03 }}
               >
-                <ValueIcon>🔍</ValueIcon>
-                <ValueTitle>Excellence</ValueTitle>
+                <ValueIcon>
+                  <Icon name="person" />
+                </ValueIcon>
+                <ValueTitle>Focused Experience</ValueTitle>
                 <ValueDescription>
-                  We are committed to delivering the highest quality in everything we do. 
-                  Our rigorous development process and attention to detail ensure that our solutions 
-                  meet the highest standards of performance, security, and user experience.
+                  Focused and experienced programmers and project-managers who understand your business needs
+                  and deliver solutions that drive real results.
                 </ValueDescription>
               </ValueCard>
               
@@ -397,12 +397,13 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.03 }}
               >
-                <ValueIcon>🤝</ValueIcon>
-                <ValueTitle>Partnership</ValueTitle>
+                <ValueIcon>
+                  <Icon name="payments" />
+                </ValueIcon>
+                <ValueTitle>Reasonable Pricing</ValueTitle>
                 <ValueDescription>
-                  We believe in building long-term relationships with our clients. 
-                  We see ourselves as an extension of your team, working collaboratively 
-                  to understand your business, challenges, and goals.
+                  We offer competitive and transparent pricing that provides excellent value for the quality
+                  of work delivered, helping you maximize your technology investment.
                 </ValueDescription>
               </ValueCard>
               
@@ -413,12 +414,13 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.03 }}
               >
-                <ValueIcon>💡</ValueIcon>
-                <ValueTitle>Innovation</ValueTitle>
+                <ValueIcon>
+                  <Icon name="handshake" />
+                </ValueIcon>
+                <ValueTitle>Fair Business Model</ValueTitle>
                 <ValueDescription>
-                  Technology evolves rapidly, and so do we. We continuously explore new 
-                  technologies and methodologies to ensure our clients benefit from the 
-                  latest advancements in the digital landscape.
+                  Our business model is built on fairness and transparency, ensuring that our 
+                  partnerships are mutually beneficial and sustainable for the long term.
                 </ValueDescription>
               </ValueCard>
               
@@ -429,12 +431,13 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.03 }}
               >
-                <ValueIcon>🔐</ValueIcon>
-                <ValueTitle>Integrity</ValueTitle>
+                <ValueIcon>
+                  <Icon name="verified" />
+                </ValueIcon>
+                <ValueTitle>High Quality</ValueTitle>
                 <ValueDescription>
-                  We operate with honesty, transparency, and ethical principles at all times. 
-                  We're straightforward about what we can deliver, timelines, and costs, 
-                  building trust through reliability and consistency.
+                  We never compromise on quality. Our rigorous development process and attention to detail 
+                  ensure that our solutions meet the highest standards of performance and reliability.
                 </ValueDescription>
               </ValueCard>
               
@@ -445,12 +448,13 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.03 }}
               >
-                <ValueIcon>🚀</ValueIcon>
-                <ValueTitle>Adaptability</ValueTitle>
+                <ValueIcon>
+                  <Icon name="insert_chart" />
+                </ValueIcon>
+                <ValueTitle>Clear Status</ValueTitle>
                 <ValueDescription>
-                  Business needs change, and we're agile enough to adapt. Our flexible 
-                  approach allows us to pivot when necessary, ensuring our solutions 
-                  remain aligned with your evolving requirements.
+                  We maintain clear and visible status updates throughout the project lifecycle,
+                  ensuring you always know exactly where your project stands.
                 </ValueDescription>
               </ValueCard>
               
@@ -461,12 +465,13 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.03 }}
               >
-                <ValueIcon>🌍</ValueIcon>
-                <ValueTitle>Responsibility</ValueTitle>
+                <ValueIcon>
+                  <Icon name="security" />
+                </ValueIcon>
+                <ValueTitle>Minimal Risk</ValueTitle>
                 <ValueDescription>
-                  We take our social and environmental responsibilities seriously. 
-                  We strive to create solutions that not only serve businesses but 
-                  also contribute positively to society and the environment.
+                  Our careful planning and experienced team minimize the risk of schedule
+                  or resource overrun, ensuring your projects are delivered on time and on budget.
                 </ValueDescription>
               </ValueCard>
             </ValuesGrid>

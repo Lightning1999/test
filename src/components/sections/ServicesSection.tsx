@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Button from '../common/Button';
+import Icon from '../common/Icon';
 
 const ServicesContainer = styled.section`
   padding: 6rem 0;
@@ -132,37 +133,37 @@ const staggerContainer = {
 const services = [
   {
     id: 1,
-    icon: '💻',
+    icon: 'computer',
     title: 'Custom Software Development',
     description: 'Tailored software solutions designed to meet your specific business requirements and challenges.'
   },
   {
     id: 2,
-    icon: '🌐',
+    icon: 'language',
     title: 'Web Development',
     description: 'Modern and responsive web applications built with the latest technologies and frameworks.'
   },
   {
     id: 3,
-    icon: '📱',
+    icon: 'smartphone',
     title: 'Mobile App Development',
     description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.'
   },
   {
     id: 4,
-    icon: '☁️',
+    icon: 'cloud',
     title: 'Cloud Solutions',
     description: 'Scalable cloud infrastructure and services that optimize performance and reduce operational costs.'
   },
   {
     id: 5,
-    icon: '🔒',
+    icon: 'security',
     title: 'Cybersecurity Services',
     description: 'Comprehensive security solutions to protect your data and applications from threats.'
   },
   {
     id: 6,
-    icon: '📊',
+    icon: 'analytics',
     title: 'Data Analytics',
     description: 'Advanced analytics solutions that transform your data into valuable business insights.'
   }
@@ -209,12 +210,12 @@ const ServicesSection: React.FC = () => {
                 transition: { duration: 0.5 }
               }}
             >
-              {service.icon}
+              <Icon name={service.icon} />
             </ServiceIcon>
             <ServiceTitle>{service.title}</ServiceTitle>
             <ServiceDescription>{service.description}</ServiceDescription>
             <CardFooter>
-              <Button to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`} variant="text" size="small">
+              <Button to="/services" variant="text" size="small">
                 Learn More →
               </Button>
             </CardFooter>
