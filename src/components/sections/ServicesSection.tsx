@@ -135,37 +135,43 @@ const services = [
     id: 1,
     icon: 'computer',
     title: 'Custom Software Development',
-    description: 'Tailored software solutions designed to meet your specific business requirements and challenges.'
+    description: 'Tailored software solutions designed to meet your specific business requirements and challenges.',
+    path: 'custom-software-development'
   },
   {
     id: 2,
     icon: 'language',
     title: 'Web Development',
-    description: 'Modern and responsive web applications built with the latest technologies and frameworks.'
+    description: 'Modern and responsive web applications built with the latest technologies and frameworks.',
+    path: 'web-development'
   },
   {
     id: 3,
     icon: 'smartphone',
     title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.'
+    description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.',
+    path: 'mobile-app-development'
   },
   {
     id: 4,
     icon: 'cloud',
     title: 'Cloud Solutions',
-    description: 'Scalable cloud infrastructure and services that optimize performance and reduce operational costs.'
+    description: 'Scalable cloud infrastructure and services that optimize performance and reduce operational costs.',
+    path: 'cloud-solutions'
   },
   {
     id: 5,
     icon: 'security',
     title: 'Cybersecurity Services',
-    description: 'Comprehensive security solutions to protect your data and applications from threats.'
+    description: 'Comprehensive security solutions to protect your data and applications from threats.',
+    path: 'cybersecurity-services'
   },
   {
     id: 6,
     icon: 'analytics',
     title: 'Data Analytics',
-    description: 'Advanced analytics solutions that transform your data into valuable business insights.'
+    description: 'Advanced analytics solutions that transform your data into valuable business insights.',
+    path: 'data-analytics'
   }
 ];
 
@@ -215,7 +221,7 @@ const ServicesSection: React.FC = () => {
             <ServiceTitle>{service.title}</ServiceTitle>
             <ServiceDescription>{service.description}</ServiceDescription>
             <CardFooter>
-              <Button to="/services" variant="text" size="small">
+              <Button to={`/services/${service.path}`} variant="text" size="small">
                 Learn More →
               </Button>
             </CardFooter>
